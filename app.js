@@ -34,19 +34,18 @@ function stopGame() {
 }
 
 //Event Listeners
-
 check.addEventListener('click', (e) => {
   if (guess.value) {
     const numberGuess = +guess.value;
     if (numberGuess > correctNumber) {
       guess.value = '';
       setAlert('Your guess is too high!', 'warning');
-      setTimeout(removeAlert, 1000);
+      setTimeout(removeAlert, 2000);
       addItToHistory(numberGuess);
     } else if (numberGuess < correctNumber) {
       guess.value = '';
       setAlert('Your guess is too low!', 'warning');
-      setTimeout(removeAlert, 1000);
+      setTimeout(removeAlert, 2000);
       addItToHistory(numberGuess);
     } else {
       setAlert('You guessed it, congratulations!', 'success');
