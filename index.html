@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Number Guesser | Check Your Luck</title>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+      .main__text {
+        font-size: 6rem;
+      }
+      input {
+        max-width: 520px;
+        margin: auto;
+      }
+      .alert {
+        max-width: 520px;
+        margin: auto;
+      }
+      .list-group {
+        max-width: 520px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <span class="navbar-brand mb-0 h1">Guess The Number</span>
+      </div>
+    </nav>
+    <div class="container">
+      <main>
+        <h1 class="text-center main__text py-4 display-1 text-warning">
+          1.2.3.
+        </h1>
+        <input
+          type="text"
+          id="guess"
+          class="form-control"
+          placeholder="Enter your guess"
+        />
+        <div id="show-alert"></div>
+        <div class="text-center py-3">
+          <button id="check" class="btn btn-primary mr-2">Check Me</button>
+          <button id="restart" class="btn btn-light ml-2">Restart</button>
+        </div>
+
+        <div id="history">
+          <ul class="list-group"></ul>
+        </div>
+      </main>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
